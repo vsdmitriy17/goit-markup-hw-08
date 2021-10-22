@@ -1,0 +1,17 @@
+/* -----------------ШАПКА (HEADER)-------------------- */
+.header {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 80px;
+
+    background-color: var(--brand-white-color);
+    border-bottom: 1px solid var(--header-border);
+}
+.header-flex {
+    @include flex();
+    justify-content: space-between;
+}

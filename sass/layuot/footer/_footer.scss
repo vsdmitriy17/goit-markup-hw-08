@@ -1,0 +1,41 @@
+/* --------------------ПОДВАЛ (FOOTER)--------------------- */
+/* Логотип */
+.footer {
+    background-color: var(--footer-background);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer--flex {
+    @include flex(flex, baseline);
+}
+
+.footer-address {
+    margin-right: 70px;
+}
+
+.footer-net {
+    margin-right: 93px;
+}
+
+.footer__title {
+    @include font(var(--brand-white-color), 700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer--link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer--icon {
+    fill: var(--brand-white-color);
+}
