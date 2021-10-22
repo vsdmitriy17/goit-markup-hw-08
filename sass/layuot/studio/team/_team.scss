@@ -4,7 +4,6 @@
 }
 
 .team {
-    @extend %list-none;
     @include flex();
     justify-content: center;
     margin-right: calc( -1 * var(--item-gap));
@@ -39,5 +38,3 @@
     display: block;
     margin-bottom: 16px;
 }
-
-

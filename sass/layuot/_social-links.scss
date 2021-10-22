@@ -1,6 +1,5 @@
 /* -------------------СОЦСЕТИ -------------------------*/
 .social {
-    @extend %list-none;
     @include flex();
     justify-content: center;
 }
@@ -13,7 +12,6 @@
 }
 
 .social__link {
-    @extend %link-none;
     @include flex();
     height: 44px;
     width: 44px;

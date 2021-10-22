@@ -2,7 +2,6 @@
     
 /* ------------------СЕКЦИЯ ФИЛЬТР-------------------------- */
 .filter {
-    @extend %list-none;
     @include flex();
     margin-bottom: 50px;
     justify-content: center;

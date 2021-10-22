@@ -1,6 +1,5 @@
 /* -------------------------СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ----------------------------- */
 .client {
-    @extend %list-none;
     @include flex();
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +13,6 @@
 }
 
 .client__link {
-    @extend %link-none;
     @include flex();
     height: 92px;
     width: 170px;

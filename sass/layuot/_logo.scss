@@ -1,6 +1,5 @@
 /* Логотип */
 .logo {
-    @extend %link-none;
     @include font(var(--accent-color), 700, 26px, 1.19, 0.03);
 }
 

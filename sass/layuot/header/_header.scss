@@ -6,12 +6,20 @@
     left: 0;
 
     width: 100%;
-    min-height: 80px;
-
+    @include flex();
     background-color: var(--brand-white-color);
     border-bottom: 1px solid var(--header-border);
+
+    @media screen and (min-width: 480px) {
+        min-height: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-height: 80px;
+    }
 }
-.header-flex {
+
+.header-box {
     @include flex();
     justify-content: space-between;
 }

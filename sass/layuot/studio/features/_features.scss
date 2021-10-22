@@ -4,7 +4,6 @@
 }
 
 .features {
-    @extend %list-none;
     @include flex();
     margin-right: calc( -1 * var(--item-gap));
 }
