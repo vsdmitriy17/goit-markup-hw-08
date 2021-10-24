@@ -1,17 +1,48 @@
 /* ------------------СЕКЦИЯ ОСОБЕННОСТИ-------------------- */
-.section--no-padding-bottom {
-    padding-bottom: 0;
+.features {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
 }
 
-.features {
-    @include flex();
-    margin-right: calc( -1 * var(--item-gap));
+.features__list {
+    @media screen and (min-width: 480px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include flex();
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: calc( -1 * var(--item-gap));
+        margin-bottom: calc( -1 * var(--item-gap));
+    }
 }
 
 .features__item {
     @include font(var(--main-color), 400, 14px, 1.71, 0.03em);
-    flex-basis: calc(100% / 4 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
-    margin-right: var(--item-gap);
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: var(--item-gap);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
+            margin-right: var(--item-gap);
+            margin-bottom: var(--item-gap);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
+    }
 }
 
 .features__box {
@@ -34,4 +65,9 @@
 
     display: inline-block;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        text-align: center;
+    }
 }

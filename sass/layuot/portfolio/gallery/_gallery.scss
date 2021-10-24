@@ -1,18 +1,50 @@
 /* ------------------СЕКЦИЯ ГАЛЕРЕЯ -------------------------*/
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: calc( -1 * var(--item-gap));  /*-----Преобразование в отрицательное значение------*/
-    margin-bottom: calc( -1 * var(--item-gap));
+.galery {
+    @media screen and (max-width: 1199px) {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 0;
+        padding-bottom: 94px;
+    }
+}
+
+.gallery__list {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: calc( -1 * var(--item-gap));  /*-----Преобразование в отрицательное значение------*/
+        margin-bottom: calc( -1 * var(--item-gap));
+    }
 }
 
 .gallery-item {
     background-color: var(--brand-white-color);
+    max-width: 450px;
 
-    flex-basis: calc(100% / 3 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
-    margin-right: var(--item-gap);
-    margin-bottom: var(--item-gap);
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: var(--item-gap);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
+        margin-right: var(--item-gap);
+        margin-bottom: var(--item-gap);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
+    }
 }
 
 .gallery-link {

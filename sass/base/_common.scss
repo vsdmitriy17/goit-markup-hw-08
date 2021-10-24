@@ -34,22 +34,8 @@
     }
 }
 
-.section__title {   /*Заголовок Секции h2*/
-    @include font(var(--secondary-color), 700, 36px, 1.17, 0.03em);
-
-    display: block;
-    text-align: center;
-
-    @media screen and (min-width: 480px) {
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-    }
-}
 .section {      /* Обертка секций контента*/
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -57,5 +43,20 @@
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
+    }
+}
+
+.section__title {   /*Заголовок Секции h2*/
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: 480px) {
+        @include font(var(--secondary-color), 700, 28px, 1.17, 0.03em);
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font(var(--secondary-color), 700, 36px, 1.17, 0.03em);
+        margin-bottom: 50px;
     }
 }

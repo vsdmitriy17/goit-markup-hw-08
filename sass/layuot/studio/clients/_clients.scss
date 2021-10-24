@@ -1,14 +1,35 @@
 /* -------------------------СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ----------------------------- */
 .client {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.client__list {
     @include flex();
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: calc( -1 * var(--item-gap));
+    margin-bottom: calc( -1 * var(--item-gap));
 }
 
 .client__item {
-    margin-right: var(--item-gap);
-    &:last-child {
-        margin-right: 0;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        margin-right: var(--item-gap);
+        margin-bottom: var(--item-gap);
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: var(--item-gap);
+        margin-bottom: var(--item-gap);
     }
 }
 

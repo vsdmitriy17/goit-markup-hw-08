@@ -1,24 +1,60 @@
 /* ------------------СЕКЦИЯ НАША КОМАНДА -------------------*/
-.section--bgc-grey {
+.team {
     background-color: var(--secondary-background);
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
-.team {
-    @include flex();
-    justify-content: center;
-    margin-right: calc( -1 * var(--item-gap));
+.team__list {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include flex();
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: calc( -1 * var(--item-gap));
+        margin-bottom: calc( -1 * var(--item-gap));
+    }
 }
 
 .team__item {
+    max-width: 450px;
     text-align: center;
+
     @include font(var(--main-color), 400, 16px, 1.19, 0.03em);
 
     background-color: var(--brand-white-color);
-    flex-basis: calc(100% / 4 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
-    margin-right: var(--item-gap);
     box-shadow: var(--shadow);
     border-radius: 3px;
     overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: var(--item-gap);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
+        margin-right: var(--item-gap);
+        margin-bottom: var(--item-gap);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
+    }
 }
 
 .team__card {

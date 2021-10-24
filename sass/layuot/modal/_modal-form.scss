@@ -77,6 +77,14 @@
 
 .modal-form__checkbox-label {
     @include flex();
+
+    @media screen and (max-width: 1199px) {
+        @include font(var(--main-color), 400, 12px, 1.17, 0.01em);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font(var(--main-color), 400, 14px, 1.71, 0.03em);
+    }
 }
 
 .modal-form__checkbox-input { /* ---------Скрываем чекбокс-----------*/
