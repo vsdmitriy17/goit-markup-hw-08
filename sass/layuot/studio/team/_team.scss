@@ -14,11 +14,7 @@
 }
 
 .team__list {
-    @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: block;
 
     @media screen and (min-width: 768px) {
         @include flex();
@@ -40,7 +36,7 @@
     border-radius: 3px;
     overflow: hidden;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         &:not(:last-child) {
             margin-bottom: var(--item-gap);
         }

@@ -7,14 +7,8 @@
     padding-bottom: 60px;
 }
 .footer--flex {
-    @media screen and (min-width: 480px) {
         display: block;
         text-align: center;
-    }
-
-    @media screen and (min-width: 768px) {
-        
-    }
 
     @media screen and (min-width: 1200px) {
         @include flex(flex, baseline);

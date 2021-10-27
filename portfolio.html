@@ -30,15 +30,14 @@
     
                 <button type="button" class="nav-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg class="nav-button__icon">
-                        <use href="./img/symbol-defs-1.svg#icon-menu_40px"></use>
+                        <use href="./img/symbol-defs.svg#icon-menu_40px"></use>
                     </svg>
                 </button>
     
                 <div class="menu-container js-menu-container" id="mobile-menu">
-    
                     <button type="button" class="nav-button js-close-menu">
                         <svg class="site-nav__icon">
-                            <use href="./img/symbol-defs-1.svg#icon-close_40px"></use>
+                            <use href="./img/symbol-defs.svg#icon-close_40px"></use>
                         </svg>
                     </button>
     
@@ -56,6 +55,7 @@
                         </li>
                     </ul>
     
+
                     <ul class="site-contacts">
                         <li class="site-contacts__item">
                             <a href="tel:+380961111111" class="site-contacts__link">+380961111111</a>
@@ -144,9 +144,19 @@
                 <ul class="gallery__list">
                     <li class="gallery-item">
                         <a href="" class="gallery-link">
-                            <div>
+                            <div class="gallery-link__card">
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_1.jpg" alt="Ноутбук" />
+                                    <img 
+                                        srcset="
+                                            ./img/desktop_x1.jpg 450w,
+                                            ./img/desktop_x2.jpg 900w,
+                                            ./img/desktop_x3.jpg 1350w
+                                        " 
+                                        src="./img/desktop_x1.jpg" 
+                                        alt="Экран"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
+
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -164,7 +174,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_2.jpg" alt="Баскетбол" />
+                                    <img 
+                                        srcset="
+                                            ./img/neworlean_x1.jpg 450w,
+                                            ./img/neworlean_x2.jpg 900w,
+                                            ./img/neworlean_x3.jpg 1350w
+                                        " 
+                                        src="./img/neworlean_x1.jpg" 
+                                        alt="Баскетбол"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -182,7 +201,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_3.jpg" alt="Рекламный постер" />
+                                    <img 
+                                        srcset="
+                                            ./img/seafood_x1.jpg 450w,
+                                            ./img/seafood_x2.jpg 900w,
+                                            ./img/seafood_x3.jpg 1350w
+                                        " 
+                                        src="./img/seafood_x1.jpg" 
+                                        alt="Ресторан"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -200,7 +228,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_4.jpg" alt="Наушники" />
+                                    <img 
+                                        srcset="
+                                            ./img/phones_x1.jpg 450w,
+                                            ./img/phones_x2.jpg 900w,
+                                            ./img/phones_x3.jpg 1350w
+                                        " 
+                                        src="./img/phones_x1.jpg" 
+                                        alt="Наушники"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -218,7 +255,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_5.jpg" alt="Две коробки" />
+                                    <img 
+                                        srcset="
+                                            ./img/boxes_x1.jpg 450w,
+                                            ./img/boxes_x2.jpg 900w,
+                                            ./img/boxes_x3.jpg 1350w
+                                        " 
+                                        src="./img/boxes_x1.jpg" 
+                                        alt="Коробки"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -236,7 +282,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_6.jpg" alt="Монитор" />
+                                    <img 
+                                        srcset="
+                                            ./img/monitor_x1.jpg 450w,
+                                            ./img/monitor_x2.jpg 900w,
+                                            ./img/monitor_x3.jpg 1350w
+                                        " 
+                                        src="./img/monitor_x1.jpg" 
+                                        alt="Монитор"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -254,7 +309,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_7.jpg" alt="Книга" />
+                                    <img 
+                                        srcset="
+                                            ./img/magazin_x1.jpg 450w,
+                                            ./img/magazin_x2.jpg 900w,
+                                            ./img/magazin_x3.jpg 1350w
+                                        " 
+                                        src="./img/magazin_x1.jpg" 
+                                        alt="Журнал"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -272,7 +336,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_8.jpg" alt="Бирка" />
+                                    <img 
+                                        srcset="
+                                            ./img/lab_x1.jpg 450w,
+                                            ./img/lab_x2.jpg 900w,
+                                            ./img/lab_x3.jpg 1350w
+                                        " 
+                                        src="./img/lab_x1.jpg" 
+                                        alt="Бирка"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -290,7 +363,16 @@
                         <a href="" class="gallery-link">
                             <div>
                                 <div class="gallery-thumb">
-                                    <img src="./img/image_9.jpg" alt="Работа с ноутбуком" />
+                                    <img 
+                                        srcset="
+                                            ./img/notebook_x1.jpg 450w,
+                                            ./img/notebook_x2.jpg 900w,
+                                            ./img/notebook_x3.jpg 1350w
+                                        " 
+                                        src="./img/notebook_x1.jpg" 
+                                        alt="Ноутбук"
+                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                    />
                                     <p class="gallery-text">
                                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     </p>
@@ -385,7 +467,7 @@
                     <button type="submit" class="subscribe-btn">
                         Подписаться
                         <svg class="subscribe-btn__icon">
-                            <use href="./img/symbol-defs-form.svg#icon-send"></use>
+                            <use href="./img/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
                 </div>

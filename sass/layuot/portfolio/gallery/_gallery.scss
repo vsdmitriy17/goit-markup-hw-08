@@ -1,9 +1,7 @@
 /* ------------------СЕКЦИЯ ГАЛЕРЕЯ -------------------------*/
 .galery {
-    @media screen and (max-width: 1199px) {
         padding-top: 0;
         padding-bottom: 60px;
-    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 0;
@@ -12,11 +10,7 @@
 }
 
 .gallery__list {
-    @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: block;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -49,7 +43,6 @@
 
 .gallery-link {
     display: block;
-
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover, &:focus{
@@ -71,8 +64,10 @@
     top: 100%;
 
     @include flex();
-    @include font(var(--brand-white-color), 400, 18px, 1.56, 0.03em);
-    
+    @include font(var(--brand-white-color), 400, 16px, 1.56, 0.03em);
+    @media screen and (min-width: 415px) {
+        @include font(var(--brand-white-color), 400, 18px, 1.56, 0.03em);
+    }
     text-align: left;
     padding: 24px;
     width: 100%;

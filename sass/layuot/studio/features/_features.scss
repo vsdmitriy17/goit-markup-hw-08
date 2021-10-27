@@ -1,9 +1,7 @@
 /* ------------------СЕКЦИЯ ОСОБЕННОСТИ-------------------- */
 .features {
-    @media screen and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
-    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -12,12 +10,10 @@
 }
 
 .features__list {
-    @media screen and (min-width: 480px) {
-        display: block;
-    }
+    display: block;
 
     @media screen and (min-width: 768px) {
-        @include flex();
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-right: calc( -1 * var(--item-gap));

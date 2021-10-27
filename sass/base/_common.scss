@@ -5,10 +5,7 @@
     color: var(--main-color);
 
     font-family: Roboto, sans-serif;
-
-    @media screen and (min-width: 480px) {
-        padding-top: 60px;
-    }
+    padding-top: 60px;
 
     @media screen and (min-width: 768px) {
         padding-top: 80px;
@@ -20,6 +17,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -34,26 +32,12 @@
     }
 }
 
-.section {      /* Обертка секций контента*/
-    @media screen and (max-width: 1199px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-}
-
 .section__title {   /*Заголовок Секции h2*/
     display: block;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
-        @include font(var(--secondary-color), 700, 28px, 1.17, 0.03em);
-        margin-bottom: 30px;
-    }
+    @include font(var(--secondary-color), 700, 28px, 1.17, 0.03em);
+    margin-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
         @include font(var(--secondary-color), 700, 36px, 1.17, 0.03em);

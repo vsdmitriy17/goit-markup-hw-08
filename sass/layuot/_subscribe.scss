@@ -1,8 +1,6 @@
        /* -----------Форма Подписки------------ */
 .subscribe {
-    @media screen and (min-width: 480px) {
         text-align: center;
-    }
 
     @media screen and (min-width: 1200px) {
         text-align: left;
@@ -40,12 +38,14 @@
 
 .subscribe-mail__input {
     padding: 15px 16px 15px 78px;
-    width: 358px;
+    max-width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
-
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
     color: var(--brand-white-color);
 }
 
