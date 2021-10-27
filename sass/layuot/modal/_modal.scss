@@ -10,13 +10,16 @@
     border-radius: 4px;
     box-shadow: var(--shadow-modal);
     background-color: var(--brand-white-color);
-    padding: 40px;
+    padding: 20px;
+    max-width: 90vw;
+    height: auto;
 
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 480px) {
         max-width: 450px;
         min-height: 609px;
+        padding: 40px;
     }
 
     @media screen and (min-width: 1200px) {

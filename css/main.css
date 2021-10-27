@@ -1072,7 +1072,7 @@ a {
   }
 }
 
-.filter-item {
+.filter__item {
   color: var(--main-color);
   font-weight: 400;
   font-size: 16px;
@@ -1135,19 +1135,19 @@ a {
   }
 }
 
-.gallery-item {
+.gallery__item {
   background-color: var(--brand-white-color);
   max-width: 450px;
 }
 
 @media screen and (max-width: 767px) {
-  .gallery-item:not(:last-child) {
+  .gallery__item:not(:last-child) {
     margin-bottom: var(--item-gap);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .gallery-item {
+  .gallery__item {
     flex-basis: calc(100% / 2 - var(--item-gap));
     /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
     margin-right: var(--item-gap);
@@ -1156,18 +1156,19 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .gallery-item {
+  .gallery__item {
     flex-basis: calc(100% / 3 - var(--item-gap));
     /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
   }
 }
 
-.gallery-link {
+.gallery__link {
   display: block;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-link:hover, .gallery-link:focus {
+.gallery__link:hover, .gallery__link:focus {
   box-shadow: var(--shadow-gallery);
   cursor: pointer;
 }
@@ -1179,7 +1180,7 @@ a {
   overflow: hidden;
 }
 
-.gallery-text {
+.gallery-thumb__text {
   position: absolute;
   left: 0;
   top: 100%;
@@ -1200,7 +1201,7 @@ a {
 }
 
 @media screen and (min-width: 415px) {
-  .gallery-text {
+  .gallery-thumb__text {
     color: var(--brand-white-color);
     font-weight: 400;
     font-size: 18px;
@@ -1209,8 +1210,14 @@ a {
   }
 }
 
-.gallery-link:hover .gallery-text, .gallery-link:focus .gallery-text {
+.gallery__link:hover .gallery-thumb__text, .gallery__link:focus .gallery-thumb__text {
   transform: translateY(-100%);
+}
+
+.gallery-link__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .gallery-card {
@@ -1219,11 +1226,12 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--gallery-border);
 }
 
-.gallery-title {
+.gallery-card__title {
   /*Заголовок h2 секция Галерея*/
   color: var(--secondary-color);
   font-weight: 700;
@@ -1491,7 +1499,9 @@ a {
   border-radius: 4px;
   box-shadow: var(--shadow-modal);
   background-color: var(--brand-white-color);
-  padding: 40px;
+  padding: 20px;
+  max-width: 90vw;
+  height: auto;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1499,6 +1509,7 @@ a {
   .modal {
     max-width: 450px;
     min-height: 609px;
+    padding: 40px;
   }
 }
 

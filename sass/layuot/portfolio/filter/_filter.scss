@@ -25,7 +25,7 @@
     }
 }
 
-.filter-item {
+.filter__item {
     @include font(var(--main-color), 400, 16px, 1.88, 0.03em);
 
         margin-right: 8px;
