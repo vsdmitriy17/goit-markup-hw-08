@@ -1646,7 +1646,7 @@ a {
   letter-spacing: 0.01em;
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 425px) {
   .modal-form__checkbox-label {
     color: var(--main-color);
     font-weight: 400;
@@ -1694,7 +1694,13 @@ a {
 
 .modal-form__link {
   color: var(--accent-color);
-  margin-left: 3px;
+  margin-left: 2px;
+}
+
+@media screen and (min-width: 425px) {
+  .modal-form__link {
+    margin-left: 3px;
+  }
 }
 
 .modal-form__btn {
