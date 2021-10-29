@@ -1,35 +1,55 @@
 /* -------------------стр Портфолио*/
     
-/* ------------------СЕКЦИЯ ФИЛЬТР-------------------------- */
+/* ------------------Блок ФИЛЬТР-------------------------- */
 .filter {
-        padding-top: 60px;
-        padding-bottom: 40px;
+        margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 }
 
 .filter__list {
     @include flex();
     flex-wrap: wrap;
-    margin-right: -8px;
-    margin-bottom: -15px;
+    align-items: baseline;
     @media screen and (min-width: 768px) {
         justify-content: center;
+        margin-bottom: 0;
     }
 }
 
 .filter__item {
     @include font(var(--main-color), 400, 16px, 1.88, 0.03em);
-
+    &:not(:last-child) {
         margin-right: 8px;
+    }
+    &:nth-child(-n + 3) { 
         margin-bottom: 15px;
+    }
+    &:nth-child(2n) { 
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 392px) {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &:nth-child(3n) { 
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+    }
 }
 
 .btn {

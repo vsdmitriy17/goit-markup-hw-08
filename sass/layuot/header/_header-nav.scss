@@ -159,14 +159,14 @@
 }
 
 .site-contacts__link {
-    @include font(var(--secondary-color), 500, 34px, 1.17, 0.02em);
+    @include font(var(--accent-color), 500, 34px, 1.17, 0.02em);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-        color: var(--accent-color);
+        color: #188CE8;
     }
 }
 .site-contacts__mail{
-    @include font(var(--secondary-color), 500, 24px, 1.17, 0.02em);
+    @include font(var(--main-color), 500, 24px, 1.17, 0.02em);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
         color: var(--accent-color);
@@ -207,11 +207,11 @@
 
 .site-social__link {
     @media screen and (max-width: 415px) {
-        @include font(var(--secondary-color), 500, 14px, 1.22, 0.02em);
+        @include font(var(--accent-color), 500, 14px, 1.22, 0.02em);
     }
-    @include font(var(--secondary-color), 500, 18px, 1.22, 0.02em);
+    @include font(var(--accent-color), 500, 18px, 1.22, 0.02em);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-        color: var(--accent-color);
+        color: #188CE8;
     }
 }
