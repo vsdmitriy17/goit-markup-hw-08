@@ -283,4 +283,12 @@ a {
 .requirements-list__item:not(:last-child) {
   margin-bottom: 15px;
 }
+
+.task3-list {
+  display: flex;
+}
+
+.task3-list__item:not(:last-child) {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=main.css.map */
