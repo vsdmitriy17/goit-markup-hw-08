@@ -19,16 +19,16 @@ const galleryEl = document.querySelector(".gallery");
 
 // Ф-ция:
 //     1) добавляет класс .task3-list на элемент ul из условия задачи
-//     2) создает строку (galleryItemsList - код HTML списка ul) методом join(), из элементов массива строк, полученного в результате метода map() на исходном массиве arrey 
+//     2) создает строку (galleryItemsMarkup - код HTML списка ul) методом join(), из элементов массива строк, полученного в результате метода map() на исходном массиве arrey 
 //     3) добавляет galleryItemsList в начало списка galleryEl
 function galleryCreate(arrey) {
     galleryEl.classList.add('task3-list');
-    const galleryItemsList = arrey
+    const galleryItemsMarkup = arrey
         .map(elem => {
         return `<li class = "task3-list__item"><img src = "${elem.url}" alt = "${elem.alt}"></li>`;
         })
         .join();
-    return galleryEl.insertAdjacentHTML('afterbegin', galleryItemsList);
+    return galleryEl.insertAdjacentHTML('afterbegin', galleryItemsMarkup);
 }; 
 
 galleryCreate(images);
