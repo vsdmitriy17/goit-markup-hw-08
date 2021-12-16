@@ -27,7 +27,7 @@ function galleryCreate(arrey) {
         .map(elem => {
         return `<li class = "task3-list__item"><img src = "${elem.url}" alt = "${elem.alt}"></li>`;
         })
-        .join();
+        .join('');
     return galleryEl.insertAdjacentHTML('afterbegin', galleryItemsMarkup);
 }; 
 
