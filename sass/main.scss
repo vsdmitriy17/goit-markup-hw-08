@@ -3,11 +3,47 @@
 @import './utils/mixins'; // Шрифты (font), flex
 @import './base/reset'; // СБРОС СТИЛЕЙ ЗАГОЛОВКОВ, АБЗАЦЕВ, СПИСКОВ, ИЗОБРАЖЕНИЙ, ССЫЛОК 
 @import './base/common'; // ОБЩИЕ СТИЛИ СЕКЦИЙ 
+@import './utils/hidden'; // Скрывает элементы 
 
 // --------------Header--------------------
 @import './layuot/header/header'; // ШАПКА (HEADER)
+@import './layuot/logo'; // Логотип
+@import './layuot/header/header-nav'; // Навигация
+@import './layuot/header/header-contacts'; // Контакты HEADER
 
-// ----------Стр. Requirements------------------------
-@import './layuot/requirements'; 
-@import './layuot/task3'; 
-@import './layuot/task6'; 
+// ----------Стр. СТУДИЯ------------------------
+// ---------------Hero-------------------------
+@import './layuot/studio/hero/hero'; // ГЕРОЙ (HERO)
+
+// ---------------Feachers--------------------
+@import './layuot/studio/features/features'; // СЕКЦИЯ ОСОБЕННОСТИ (FEACHERS)
+
+// ---------------Work--------------------
+@import './layuot/studio/work/work'; // СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ (WORK)
+
+// ---------------Team-------------------
+@import './layuot/studio/team/team'; // СЕКЦИЯ НАША КОМАНДА (TEAM)
+// --------------Social-links----------------
+@import './layuot/social-links'; // СОЦСЕТИ
+
+// ---------------Clients------------------
+@import './layuot/studio/clients/clients'; // СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ (CLIENTS)
+
+// ----------Стр. ПОРТФОЛИО----------------------
+// ---------------Filter--------------------
+@import './layuot/portfolio/gallery/filter'; // СЕКЦИЯ ФИЛЬТР (FILTER)
+
+// ---------------Gallery---------------------
+@import './layuot/portfolio/gallery/gallery'; // СЕКЦИЯ ГАЛЕРЕЯ (GALLERY)
+
+// ---------------Footer-------------------
+@import './layuot/footer/footer'; // ПОДВАЛ (FOOTER)
+@import './layuot/address'; // АДРЕСС (Address)
+@import './layuot/contacts'; // КОНТАКТЫ (Contacts)
+@import './layuot/subscribe'; // Форма Подписки
+
+// ---------------Modal-------------------
+@import './layuot/modal/backdrop'; // OVERLAY
+@import './layuot/modal/modal'; // Модальное окно (MODAL)
+@import './layuot/modal/modal-form'; // Форма модального окна
+@import './layuot/modal/is-hidden'; // СКРЫВАЕТ МОДАЛЬНОЕ ОКНО И OVERLAY, В НЕ АКТИВНОМ СОСТОЯНИИ

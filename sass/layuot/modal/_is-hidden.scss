@@ -1,0 +1,10 @@
+/* --СКРЫВАЕТ МОДАЛЬНОЕ ОКНО И OVERLAY, В НЕ АКТИВНОМ СОСТОЯНИИ-- */
+.backdrop.is-hidden {  /*Скрывает модальное окно*/
+    opacity: 0;
+    pointer-events: none; /*позволяет производить действия через слой модального окна*/
+    visibility: hidden;
+
+    & .modal {
+        transform: scale(0.5);
+    }
+}

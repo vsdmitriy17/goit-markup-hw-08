@@ -1,0 +1,41 @@
+/* ----------------СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ ----------------*/
+.work {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.work__list {
+    @include flex();
+    justify-content: center;
+    margin-right: calc( -1 * var(--item-gap));
+}
+.work__item {
+    flex-basis: calc(100% / 3 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
+    margin-right: var(--item-gap);
+}
+.work__thumb {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.work__text {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include font(var(--brand-white-color), 400, 14px, 1.14, 0.03em);
+
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+}

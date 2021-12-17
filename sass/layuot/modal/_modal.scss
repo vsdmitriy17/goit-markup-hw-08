@@ -1,0 +1,60 @@
+/* -------------------- Модальное окно--------------------- */
+.modal {  /*модальное окно*/
+    position: relative;
+    /*left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);*/ /*Позиционирование модального окна по центру, относительно backdrop*/
+    z-index: 20;
+    transform: scale(1);
+
+    border-radius: 4px;
+    box-shadow: var(--shadow-modal);
+    background-color: var(--brand-white-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    max-width: 100%;
+    height: auto;
+
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+        padding: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+        min-height: 581px;
+    }
+}
+
+.modal__button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 2;
+
+    @include flex();
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    border-style: solid;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal__icon-btn {
+    width: 18px;
+    height: 18px;
+    fill: var(--logo-black-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal__button:hover &, .modal__button:focus & {
+        fill: var(--accent-color);
+    }
+}

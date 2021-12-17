@@ -1,1 +1,2 @@
-# goit-js-hw-06
+# goit-markup-hw-08
+GoIt ДЗ-8 Адаптивная верстка
